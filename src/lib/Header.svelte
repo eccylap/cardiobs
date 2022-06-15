@@ -1,5 +1,5 @@
 <script>
-
+    export let phone;
 </script>
 
 <head>
@@ -10,7 +10,7 @@
     <div class="upperHeader">
         <ul>
             <li id="address"><i class="fa fa-map"></i> Бургас, ж.к. Перла</li>
-            <li id="phone" ><i class="fa fa-phone"></i> 088 123456</li>
+            <li id="phone" ><i class="fa fa-phone"></i> {phone}</li>
             <li id="email" ><i class="fa fa-envelope"></i> cardiocenterbs@gmail.bg</li>
             <li id="workHours"><i class="fa fa-clock-o"></i> Пон-Петък 7:30 - 18:30 </li>
         </ul>
@@ -56,7 +56,7 @@
         display: flex;
         padding: 0px 15vw;
         justify-content: space-between;
-        box-shadow: 0px 0px 10px grey;
+        box-shadow: 0px 2px 10px grey;
     }
 
     header {

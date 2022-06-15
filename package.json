@@ -15,5 +15,8 @@
 		"svelte": "^3.44.0",
 		"svelte-preprocess": "^4.10.7"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"leaflet": "^1.8.0"
+	}
 }

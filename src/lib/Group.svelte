@@ -17,7 +17,7 @@
             <p><i class="fa fa-arrow-right" style="font-size: 1.6rem;"></i> 088 123456</p>
         </div>
         <p id="smalltext">За всички мобилни оператори.</p>
-        <p id="smallertext">*отговарям до 3 часа</p>
+        <p id="smallertext">*отговарям до 3 седмици</p>
     </div>
     <div class="heading_alt">
         <div class="gap_up" id="hr_alt">
@@ -97,6 +97,7 @@
         font-family: "Play", sans-serif;
         font-size: 3rem;
         color: $darker_blue;
+        text-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.2);
     }
 
     img {
@@ -133,14 +134,6 @@
             flex-direction: column;
             align-items: center;
             padding: 0px 40px;
-
-            .phone {
-                display: flex;
-                justify-content: center;
-                p {
-                    float: none;
-                }
-            }
 
             h1 {
                 font-size: 2rem;

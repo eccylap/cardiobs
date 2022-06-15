@@ -10,11 +10,12 @@ $darker_blue: hsl(212, 70%, 17%);
 
 //reds
 $accent_red: hsl(346, 87%, 59%);
-$soft_button: hsl(346, 80%, 60%);
+$soft_button: hsl(346, 73%, 53%);
 
 //blacks
 $bg_black: hsl(0, 0%, 20%);
-$text_black: black;
+$text_black: hsl(0, 0%, 10%);
+$text_black_soft: hsl(0, 0%, 40%);
 
 //whites
 $bg_white: #f7fff7;
@@ -25,7 +26,8 @@ $soft_text_white: hsl(0, 0%, 90%);
 //bonus
 $gray: hsl(0, 0%, 50%);
 $softer_gray: hsl(0, 0%, 80%);
-$human_skin: hsl(19, 46%, 86%);
+$human_skin: hsl(19, 48%, 89%);
+$baby_blue: #eaf4fa;
 
 //* Mixins
 @mixin nomargpad() {
@@ -36,6 +38,11 @@ $human_skin: hsl(19, 46%, 86%);
 @mixin noanchor() {
     text-decoration: none;
     cursor: pointer;
+}
+
+@mixin paragraphtext() {
+    font-weight: 300;
+    font-size: 1.1rem;
 }
 
 @mixin smalltext() {
@@ -52,9 +59,20 @@ $human_skin: hsl(19, 46%, 86%);
     font-style: italic;
 }
 
-//*bloat removal
-html,body {
-    @include nomargpad();
-    background-color: $bg_white;
-    font-family: 'Open Sans';
+//* Help classes
+.centered {
+    display: flex;
+    justify-content: center;
 }
+
+.margined-center {
+    margin: 0 15vw;
+}
+
+
+//*bloat removal
+// html,body {
+//     @include nomargpad();
+//     background-color: $bg_white;
+//     font-family: 'Open Sans';
+// }
