@@ -105,7 +105,7 @@
     }
 
     .containter {
-        background-image: url("wallpaper.png");
+        background-image: url("/wallpaper.png");
         background-repeat: no-repeat;
         background-position: center;
         height: 700px;

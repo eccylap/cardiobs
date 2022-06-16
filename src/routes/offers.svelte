@@ -8,7 +8,7 @@
 </script>
 
 <div class="margined-center">
-    <Equipment imageSource="equip2.png" />
+    <Equipment imageSource="/equip2.png" />
     <Services />
 </div>
 <WorkTimes />

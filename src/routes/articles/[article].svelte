@@ -4,8 +4,8 @@
     let itemsToDisplay = [];
     
     //Available item types
-    // text (heading '', paragraphs[], supplementPhoto)
-    // photos (sources [])
+    // text (heading '', paragraphs[], supplementPhoto '')
+    // photos (sources [], heading '', paragraph '')
     
     switch ($page.params.article) {
         case "covid.svelte":
@@ -85,6 +85,12 @@
         display: inline-block;
 
         width: 20%;
+    }
+
+    p {
+        font-family: "Open Sans", sans-serif;
+        color: $text_black;
+        font-weight: 300;
     }
 
     h2 {
