@@ -16,12 +16,11 @@
         </ul>
     </div>
     <div class="lowerHeader">
-        <img id="logo" src="logo.png" height="100%" alt="sex">
+        <img id="logo" src="/logo.png" height="100%" alt="sex">
         <nav class="lower">
             <a href="/">Начало</a>
             <a href="/offers">Дейности</a>
             <a href="/about">За Нас</a>
-            <a href="/gallery">Галерия</a>
         </nav>
     </div>
 </header>

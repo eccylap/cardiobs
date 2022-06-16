@@ -14,7 +14,7 @@
         <h1>КАРДИОЛОГИЧЕН <br> ЦЕНТЪР БУРГАС</h1>
         <p>Вашето здраве е приоретитет за нас (мен)</p>
         <div id="phone">
-            <p><i class="fa fa-arrow-right" style="font-size: 1.6rem;"></i> 088 123456</p>
+            <p>0876/999-539</p>
         </div>
         <p id="smalltext">За всички мобилни оператори.</p>
         <p id="smallertext">*отговарям до 3 седмици</p>
@@ -26,7 +26,7 @@
         <h1 class="gap_up">КАРДИОЛОГИЧЕН <br> ЦЕНТЪР БУРГАС</h1>
         <p class="gap_up">Вашето здраве е приоретитет за нас (мен)</p>
         <div id="phone" class="gap_up little_gap_down">
-            <p>088 123456</p>
+            <p>0876/999-539</p>
         </div>
     </div>
 </div>
@@ -106,8 +106,9 @@
 
     .containter {
         background-image: url("wallpaper.png");
-        background-position: right;
-        height: 720px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 700px;
     }
 
     @media only screen and (max-width: 1575px) {

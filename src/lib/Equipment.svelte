@@ -55,7 +55,7 @@
     }
 
     hr {
-        color: $darker_blue;
+        color: $accent_red;
         width: 30%;
         margin-top: 20px;
         float: left;

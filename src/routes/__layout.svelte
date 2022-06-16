@@ -2,7 +2,7 @@
     import Header from "../lib/Header.svelte";
     import Footer from "../lib/Footer.svelte";
 
-    let phone = '088 123456';
+    let phone = '0876/999-539';
 </script>
 
 <Header phone={phone} />

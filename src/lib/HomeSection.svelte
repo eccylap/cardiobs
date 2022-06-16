@@ -4,6 +4,7 @@
     export let additionaltext2;
     export let imageSource;
     export let infobutton;
+    export let routeTo;
 
 </script>
 
@@ -16,7 +17,7 @@
         <div id="idnent">
             <p><span style="display: inline-block; width: 2ch;">&#9;</span>{additionaltext1}</p>
             <p><span style="display: inline-block; width: 2ch;">&#9;</span>{additionaltext2}</p>
-            <a id="button" class="gap_up little_gap_down">{infobutton} <i style="margin-left:5px;" class="fa fa-angle-right"></i></a>
+            <a id="button" href={routeTo} class="gap_up little_gap_down">{infobutton} <i style="margin-left:5px;" class="fa fa-angle-right"></i></a>
         </div>
     </div>
     <div class="right_part">
@@ -48,6 +49,10 @@
         height: 420px;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     #idnent {
         margin-left: 30px
     }
@@ -70,7 +75,7 @@
         width: 45%;
         height: auto;
         hr {
-            color: $darker_blue;
+            color: $accent_red;
             width: 40%;
             float: left;
         }
