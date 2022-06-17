@@ -4,19 +4,15 @@
     import Reviews from "../lib/Reviews.svelte";
     import Map from "../lib/Map.svelte";
     import NoMap from "../lib/NoMap.svelte";
-    import {nonTrackingConsent} from "../stores/cookie-consent";
-    import CookieSettings from "../lib/CookieSettings.svelte";
+    import {showModal} from "../stores/cookie-consent";
 
-    
-    let showModal = false;
-    const toggleModal = () => {
-        showModal = !showModal;
+    function toggleModal() {
+        $showModal = !$showModal;
     }
-
+    
     let additionaltexts = ["Кардиологичен Център Бургас е оборудван с много висок клас апаратура, подбрана взискателно и безкомпромисно.", "Това ни прави напълно уверени и спокойни, че сме осигурили широко поле за действие, в което да приложим нашите знания, умения и професионален опит. Наличното оборудване ни дава свободата и сигурността да реагираме неотложно и адекватно да покрием целия кардиологичен спектър в амбулаторията.", "Прегледите в Кардиологичен Център Бургас са разпределени през голям интервал, осигуряващ възможност за проветряване и дезинфекция на помещенията и апаратурата след всеки преглед, както и избягване засичането на пациентите един с друг."]
 </script>
 
-<CookieSettings showModal={showModal}/>
 <Group />
 <div class="centering">
     <HomeSection routeTo={`articles/photos.svelte`} heading="Добре Дошли в Нашата Клиника" additionaltext1={additionaltexts[0]} additionaltext2={additionaltexts[1]} imageSource={"/bonusimage1.png"} infobutton={'Още снимки'}/>
@@ -25,11 +21,7 @@
 <div class="center">
     <Reviews />
 </div>
-{#if $nonTrackingConsent === true}
-    <Map />
-{:else}
-    <NoMap on:click={() => toggleModal()} />
-{/if}
+<Map />
 
 <style lang="scss">
     @import "../style.scss";

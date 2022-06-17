@@ -1,5 +1,11 @@
 <script>
     export let phone;
+
+    import {showModal} from "../stores/cookie-consent";
+
+    function showIt() {
+        $showModal = true;
+    }
 </script>
 
     <footer>
@@ -13,7 +19,7 @@
             <a href="/">Начало</a> <br>
             <a href="/">Дейности</a><br>
             <a href="/">За Нас</a><br>
-            <a href="/">Галерия</a><br>
+            <span on:click={showIt}>Настройки за бисквитки</span><br>
         </div>
         <div id="facebooks">
             <p><strong>Facebook</strong></p>
@@ -41,6 +47,12 @@
         color: $soft_text_white;
         display: inline-block;
         margin-top: 10px;
+    }
+
+    span {
+        display: block;
+        margin-top: 10px;
+        cursor: pointer;
     }
 
     #contact {

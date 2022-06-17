@@ -1,19 +1,19 @@
 <script>
-    export let showModal = true;
-    import {nonTrackingConsent} from "../stores/cookie-consent";
+    import {nonTrackingConsent, showModal, hasAnswered} from "../stores/cookie-consent";
     let nonTrackConsent = false;
 
     function handleSubmit() {
         if (nonTrackConsent) {
-            $nonTrackingConsent = true;
+            $nonTrackingConsent = 'true';
         } else {
-            $nonTrackingConsent = false;
+            $nonTrackingConsent = 'false';
         }
-        showModal = false;
+        $showModal = false;
+        $hasAnswered = true;
     }
 </script>
 
-{#if showModal === true}
+{#if $showModal === true}
     <div class="backdrop">
         <div class="modal">
             <h2>За какво се използват бисквитките?</h2>

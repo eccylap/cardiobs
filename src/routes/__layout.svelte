@@ -4,18 +4,21 @@
     import CookieSettings from "../lib/CookieSettings.svelte";
     import CookieBanner from "../lib/CookieBanner.svelte";
 
+    import {nonTrackingConsent, showModal, hasAnswered} from "../stores/cookie-consent"
+
     let phone = '0876/999-539';
-    let showBanner = true;
-    let showModal = false;
+    let showBanner;
+    showBanner = $hasAnswered === 'true' ? false : true;
 
     const toggleModal = () => {
-        showModal = !showModal;
+        $showModal = !$showModal;
         showBanner = !showBanner;
     }
+    
 </script>
 
 <CookieBanner showBanner={showBanner} on:click={() => toggleModal()}/>
-<CookieSettings showModal={showModal}/>
+<CookieSettings showModal={$showModal}/>
 <Header phone={phone} />
 
 <main>
