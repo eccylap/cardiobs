@@ -17,12 +17,13 @@
         <div id="links">
             <p><strong>Връзки</strong></p>
             <a href="/">Начало</a> <br>
-            <a href="/">Дейности</a><br>
-            <a href="/">За Нас</a><br>
-            <span on:click={showIt}>Настройки за бисквитки</span><br>
+            <a href="/offers">Дейности</a><br>
+            <a href="/about">За Нас</a><br>
         </div>
         <div id="facebooks">
             <p><strong>Facebook</strong></p>
+            <span on:click={showIt}>Настройки за бисквитки</span>
+            <a href="/articles/privacy.svelte">Поверителност на данните</a><br>
         </div>
         <div id="madeby">
             <p>Copyright &copy;2022 cardio-bs. Made with &hearts; by Zakrok09.</p>

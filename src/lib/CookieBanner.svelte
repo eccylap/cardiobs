@@ -5,7 +5,7 @@
 {#if showBanner}
     <div id="cookieConsent">
         <span>Този уебсайт използва бисквитки с цел подобряване използаемостта му.</span> <br>
-        <a href="/">Още информация</a> 
+        <a href="/articles/privacy.svelte">Още информация</a> 
         <div class="flex_cont">
             <button on:click class="cookieConsentOK">Настройки</button>
         </div>
