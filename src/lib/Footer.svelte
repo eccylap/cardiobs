@@ -130,4 +130,13 @@
             font-size: 10px;
         }
     }
+
+    @media only screen and (max-width: 275px) {
+        footer {
+           grid-template: 200px 200px 200px 50px / 1fr;
+           #contact #facebooks #links {
+               margin: 30px 0px;
+           }
+        }
+    }
 </style>
