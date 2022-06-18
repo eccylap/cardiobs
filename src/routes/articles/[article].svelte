@@ -220,4 +220,42 @@
             color: $soft_button;
         }
     }
+
+    @media only screen and (max-width: 520px) {
+        .textbox {
+            img {
+                display: none;
+            }
+        }
+
+        .photo {
+            max-height: auto;
+            max-width: 80vw;
+        }
+
+        .text {
+            width: 100%;
+            font-size: 0.8rem;
+            text-align: left;
+
+            h2 {
+                font-size: 1rem;
+            }
+        }
+
+        h1 {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+        }
+
+        .center_controller {
+            margin: 40px 6vw;
+        }
+        
+    }
 </style>
