@@ -39,11 +39,11 @@
         <div class="lowererHeader hiddenForPc">
             <nav class="lowerer">
                 <a href="/">Начало</a>
-                <a href="/about">За Нас</a>
+                <a href="/articles/forus.svelte">За Нас</a>
                 <a href="/offers">Дейности</a>
                 <a href="/about">Екип</a>
-                <a href="/about">Запишете час</a>
-                <a href="/about">Галерия</a>
+                <a href="/appointment">Запишете час</a>
+                <a href="/articles/photos.svelte">Галерия</a>
             </nav>
         </div>
     {/if}
