@@ -5,7 +5,7 @@
 <div class="grid">
     <div class="heading">
         <hr>
-        <h2>За Нас</h2>
+        <h2>Екип</h2>
         <p>Ние (аз) сме превъзходни лекари</p>
     </div>
     <img  id="photo1" class="photo" src="istinskidoktor.png" alt="">
