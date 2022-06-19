@@ -22,13 +22,13 @@
         </ul>
     </div>
     <div class="lowerHeader">
-        <img id="logo" src="/logo.png" height="100%" alt="Кардиологичен Център Бургас">
+        <a href="/"><img id="logo" src="/logo.png" height="100%" alt="Кардиологичен Център Бургас"></a>
         <nav class="lower">
             <a href="/">Начало</a>
             <a href="/articles/forus.svelte">За Нас</a>
             <a href="/offers">Дейности</a>
             <a href="/about">Екип</a>
-            <a href="/about">Запишете час</a>
+            <a href="/appointment">Запишете час</a>
             <a href="/articles/photos.svelte">Галерия</a>
         </nav>
         <div on:click={toggleNav} class="openLowerer hiddenForPc">

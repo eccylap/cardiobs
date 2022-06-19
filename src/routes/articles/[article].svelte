@@ -23,7 +23,7 @@
                     type: 'photos',
                     heading: 'Снимки',
                     paragraph: 'Ето снимки от върховния кабинет',
-                    sources: ['/clin1.png', '/clin2.png', '/clin3.png']
+                    sources: ['/clin1.png', '/clin2.png', '/clin3.png', '/clin2.png', '/clin1.png', '/clin1.png', '/clin2.png', '/clin3.png', '/clin3.png', '/clin2.png', '/clin1.png']
                 });
                 break;
             case "forus.svelte":
@@ -93,7 +93,7 @@
                             <p>{paragraph}</p>
                         {/each}
                     </div>
-                    <img class="supplementImg" src={item.supplementPhoto} alt="">
+                    <img class="supplementImg" src={item.supplementPhoto} alt=" ">
                 </div>
             {:else if item.type === "photos"}
                 <div class="photobox">
@@ -181,6 +181,7 @@
         margin-top: 0px;
         margin-bottom: 30px;
         color: $darker_blue;
+        text-align: left;
         font-size: 2rem;
         font-family: "Open Sans", sans-serif;
     }
