@@ -1,5 +1,11 @@
 <script>
     export let phone;
+
+    let navDisplay = false;
+
+    function toggleNav() {
+        navDisplay = !navDisplay;
+    }
 </script>
 
 <head>
@@ -16,13 +22,31 @@
         </ul>
     </div>
     <div class="lowerHeader">
-        <img id="logo" src="/logo.png" height="100%" alt="sex">
+        <a href="/"><img id="logo" src="/logo.png" height="100%" alt="Кардиологичен Център Бургас"></a>
         <nav class="lower">
             <a href="/">Начало</a>
+            <a href="/articles/forus.svelte">За Нас</a>
             <a href="/offers">Дейности</a>
-            <a href="/about">За Нас</a>
+            <a href="/about">Екип</a>
+            <a href="/appointment">Запишете час</a>
+            <a href="/articles/photos.svelte">Галерия</a>
         </nav>
+        <div on:click={toggleNav} class="openLowerer hiddenForPc">
+            <i class="fa fa-angle-down"></i>
+        </div>
     </div>
+    {#if navDisplay}
+        <div class="lowererHeader hiddenForPc">
+            <nav class="lowerer">
+                <a href="/">Начало</a>
+                <a href="/about">За Нас</a>
+                <a href="/offers">Дейности</a>
+                <a href="/about">Екип</a>
+                <a href="/about">Запишете час</a>
+                <a href="/about">Галерия</a>
+            </nav>
+        </div>
+    {/if}
 </header>
 
 <style lang="scss">
@@ -56,6 +80,14 @@
         padding: 0px 15vw;
         justify-content: space-between;
         box-shadow: 0px 2px 10px grey;
+    }
+
+    .hiddenForPc {
+        display: none;
+    }
+
+    .hiddenForPc {
+        display: none;
     }
 
     header {
@@ -110,7 +142,7 @@
         }
     }
 
-    @media only screen and (max-width: 740px) {
+    @media only screen and (max-width: 960px) {
         #logo {
             display: none;
         }
@@ -121,24 +153,51 @@
         }
     }
 
-    @media only screen and (max-width: 420px) {
+    @media only screen and (max-width: 440px) {
         #workHours {
             display: none;
         }
 
         ul {
-            padding: 0px;
+            padding: 10px;
             justify-content: center;
             li {
-                font-size: 0.9rem;
+                font-size: 1rem;
                 margin: 5px;
             }
         }
-        
+    }
+
+    @media only screen and (max-width: 620px) {
+        .hiddenForPc {
+            display: block;
+        }
+
+        .lower {
+            display: none;
+        }
+
         .lowerHeader {
+            align-items: center;
+            justify-content: flex-end;
+            height: 50px;
+        }
+
+        .openLowerer {
+            padding: 0px 20px;
+            height: 100%;
+            display: flex;
             justify-content: center;
-            padding: 0vw;
-            font-size: 0.9rem;
+            align-items: center;
+            background-color: hsl(0, 0%, 90%);
+            cursor: pointer;
+        }
+
+        .lowerer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 15px;
         }
     }
 </style>

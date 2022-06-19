@@ -19,6 +19,7 @@
             <h2>За какво се използват бисквитките?</h2>
             <p>Бисквитките в този уебсайт се използват за функционалност (напр. карта вградена от Google Maps). Този уебсайт не събира ваши дани като имейли, пароли и т.н.</p>
             <p><strong>Ваше неприкосновено право</strong> е възможността да се откажете от каквито и да е бисквитки, които не са необходими да функционалността на сайта.</p>
+            <a href="/articles/privacy.svelte" target="_blank">Повече информация</a> <br><br>
             <form on:submit|preventDefault={handleSubmit}>
                 <input type="checkbox" bind:checked={nonTrackConsent}>Бисквитки от Google Maps <br>
                 <button type="submit">Приеми избраните бисквитки</button>

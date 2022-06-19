@@ -7,7 +7,9 @@
     }
 </script>
 
-<div id="iframe_rep" style="margin-top: {marginalTop};" title="empty" src="" frameborder="0"><span>Изключили сте бисквитките за карта. Може да ги включите обратно <u on:click={openModal}>тук</u></span> 
+<div id="iframe_rep" style="margin-top: {marginalTop};" title="empty" src="" frameborder="0">
+    <span>Изключили сте бисквитките за карта. Може да ги включите обратно <u on:click={openModal}>тук</u></span> 
+    <p>Адрес на фирмата: Бургас иуаегфпоиаеугфил</p>
     <p>Вместо да включвате картата може да отворите този линк тук:</p> <a target="about:blank" href="https://g.page/CardiologicalCenter?share">Към Карта</a>
 </div>
 
@@ -26,6 +28,13 @@
         align-items: center;
         font-family: sans-serif;
         color: $gray;
+        font-size: 0.9rem;
+        span {
+            margin: 0px 10px;
+        }
+        p {
+            margin: 5px 10px;
+        }
 
         u {
             cursor: pointer;

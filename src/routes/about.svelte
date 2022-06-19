@@ -1,13 +1,9 @@
 <script>
-
+    import PageHeading from "../lib/miniComponents/PageHeading.svelte";
 </script>
 
 <div class="grid">
-    <div class="heading">
-        <hr>
-        <h2>За Нас</h2>
-        <p>Ние (аз) сме превъзходни лекари</p>
-    </div>
+    <PageHeading heading={"Екип"} underHeading={"Ние (аз) сме превъзходни лекари"} />
     <img  id="photo1" class="photo" src="istinskidoktor.png" alt="">
     <img  id="photo2" class="photo" src="legitdoc2.png" alt="">
     <img  id="photo3" class="photo" src="istinskidoktor.png" alt="">
@@ -33,31 +29,7 @@
 
 <style lang="scss">
     @import "../style.scss";
-
-    .heading {
-        grid-area: 1 / 2 / span 1 / span 5;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        p {
-            @include smalltext();
-        }
-    }
-
-    hr {
-        width: 12vw;
-        color: $accent_red;
-    }
-
-    h2 {
-        @include nomargpad();
-        margin-top: 10px;
-        font-size: 3rem;
-        color: $darker_blue;
-        font-family: "Open Sans", sans-serif;
-    }
+    
 
     p {
         font-size: 1.1rem;
