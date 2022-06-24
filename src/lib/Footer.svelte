@@ -20,8 +20,8 @@
             <a href="/offers">Дейности</a><br>
             <a href="/about">За Нас</a><br>
         </div>
-        <div id="facebooks">
-            <p><strong>Facebook</strong></p>
+        <div id="additional_info">
+            <p><strong>Допълнителна инфромация</strong></p>
             <span on:click={showIt}>Настройки за бисквитки</span>
             <a href="/articles/privacy.svelte">Поверителност на данните</a><br>
         </div>
@@ -37,6 +37,7 @@
         @include nomargpad();
         background-color: $bg_black;
         color: $soft_text_white;
+        font-family: "Open Sans", sans-serif;
         margin-top: -10px;
         display: grid;
         padding: 0 15vw;
@@ -66,7 +67,7 @@
         padding: 20px 30px;
     }
 
-    #facebooks {
+    #additional_info {
         grid-area: 1 / 3 / span 1 / span 1;
         padding: 20px 30px;
     }
@@ -99,7 +100,7 @@
             grid-area: 1 / 2 / span 1 / span 1;
         }
 
-        #facebooks {
+        #additional_info {
             grid-area: 2 / 1 / span 1 / span 2;
         }
 
@@ -121,7 +122,7 @@
             grid-area: 2 / 1 / span 1 / span 1;
         }
 
-        #facebooks {
+        #additional_info {
             grid-area: 3 / 1 / span 1 / span 2;
         }
 
@@ -134,7 +135,7 @@
     @media only screen and (max-width: 275px) {
         footer {
            grid-template: 200px 200px 200px 50px / 1fr;
-           #contact #facebooks #links {
+           #contact #additional_info #links {
                margin: 30px 0px;
            }
         }
