@@ -1,10 +1,11 @@
 <script>
-    export let heading = "wtf we manqkis";
-    export let additionaltext1;
-    export let additionaltext2;
-    export let imageSource;
-    export let infobutton;
-    export let routeTo;
+    
+    export let heading = "WARNING: NO HEADING SPECIFIED";
+    export let additionaltext1; // first text do be displayed
+    export let additionaltext2; // second text to be displayed
+    export let imageSource; // source for supplementary image
+    export let infobutton; // text in the pinkish red button
+    export let routeTo; // href for the anchor tag which holds the pinkish red button
 
 </script>
 

@@ -30,6 +30,10 @@
 <style lang="scss">
     @import "../style.scss";
 
+    .margined-center {
+        margin: 0 15vw;
+    }
+
     .icons {
         width: 40px;
         text-align: center;
