@@ -1,20 +1,22 @@
 <script>
     export let imageSource;
+    export let heading = "";
+    export let text1 = "";
 </script>
 
-    <div class="equipment">
+    <div class="article_left">
         <img src={imageSource} alt="">
         <div id="text">
             <hr>
-            <h2>Апаратура</h2>
-            <p>Кардиологичен Център Бургас е оборудван с много висок клас апаратура, подбрана взискателно и безкомпромисно. В сайта има информация и снимки за апарати, уреди и пособия, с които разполагаме.</p>
+            <h2>{heading}</h2>
+            <p>{text1}</p>
             <a id="button" href="/">Разгледай</a>
         </div>
     </div>
 
 <style lang="scss">
     @import "../style.scss";
-    .equipment {
+    .article_left {
         display: grid;
         grid-template: 300px / 1fr 3fr 1fr;
     }
@@ -85,7 +87,7 @@
     }
 
     @media only screen and (max-width: 490px) {
-        .equipment {
+        .article_left {
             grid-template: 400px / 1fr;
         }
     }
