@@ -33,20 +33,20 @@
 <style lang="scss">
     @import "../style.scss";
 
-    #denied {
-        background-color: $soft_text_white;
-        color: $bg_black;
-        padding: 5px;
-        border: none;
-        margin-top: 20px;
-        font-size: 0.9rem;
-        display: inline-block;
-        cursor: pointer;
+    // #denied {
+    //     background-color: $soft_text_white;
+    //     color: $bg_black;
+    //     padding: 5px;
+    //     border: none;
+    //     margin-top: 20px;
+    //     font-size: 0.9rem;
+    //     display: inline-block;
+    //     cursor: pointer;
 
-        &:hover {
-            background-color: $softer_text_white;
-        }
-    }
+    //     &:hover {
+    //         background-color: $softer_text_white;
+    //     }
+    // }
     .backdrop {
         width: 100%;
         height: 100%;

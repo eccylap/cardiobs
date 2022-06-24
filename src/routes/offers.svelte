@@ -15,5 +15,9 @@
 
 <style lang="scss">
     @import "../style.scss";
+
+    .margined-center {
+        margin: 0 15vw;
+    }
 </style>
 
