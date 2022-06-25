@@ -6,6 +6,8 @@
     //Available item types
     // text (heading '', paragraphs[], supplementPhoto '')
     // photos (sources [], heading '', paragraph '')
+    // heading (heading '')
+    // links (links[ {text '', href ''}, ... ])
     afterNavigate(() => {
         switch ($page.params.article) {
             case "covid.svelte":
