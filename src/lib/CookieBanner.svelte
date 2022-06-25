@@ -1,9 +1,11 @@
 <script>
+    import {fade} from "svelte/transition"
+
     export let showBanner;
 </script>
 
 {#if showBanner}
-    <div id="cookieConsent">
+    <div transition:fade id="cookieConsent">
         <span>Този уебсайт използва бисквитки с цел подобряване използаемостта му.</span> <br>
         <a href="/articles/privacy.svelte">Още информация</a> 
         <div class="flex_cont">

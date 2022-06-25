@@ -1,5 +1,6 @@
 <script>
     import {nonTrackingConsent, showModal, hasAnswered} from "../stores/cookie-consent";
+    import { fade } from "svelte/transition"
     let nonTrackConsent = false;
 
     function handleSubmit() {
@@ -14,7 +15,7 @@
 </script>
 
 {#if $showModal === true}
-    <div class="backdrop">
+    <div class="backdrop" transition:fade={{duration: 150}}>
         <div class="modal">
             <h2>За какво се използват бисквитките?</h2>
             <p>Бисквитките в този уебсайт се използват за функционалност (напр. карта вградена от Google Maps). Този уебсайт не събира ваши дани като имейли, пароли и т.н.</p>
@@ -22,7 +23,10 @@
             <p>За да промените избора си по-късно, цъкнете на "Настройки за бисквитки" най-долу на страницата.</p>
             <a href="/articles/privacy.svelte" target="_blank">Повече информация</a> <br><br>
             <form on:submit|preventDefault={handleSubmit}>
-                <input type="checkbox" bind:checked={nonTrackConsent}>Бисквитки от Google Maps <br>
+                <label class="switch" for="googleConsent">
+                    <input id="googleConsent" type="checkbox" bind:checked={nonTrackConsent}>
+                    <span class="slider round"></span>
+                </label>Бисквитки от Google Maps <br>
                 <button type="submit">Приеми избраните бисквитки</button>
             </form>
         </div>
@@ -33,6 +37,66 @@
 
 <style lang="scss">
     @import "../style.scss";
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 45px;
+        height: 23px;
+        margin-right: 5px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 19px;
+        width: 19px;
+        top: 2px;
+        left: 2px;
+        background-color: $bg_black;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: $accent_red;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px $accent_red;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(22px);
+        -ms-transform: translateX(22px);
+        transform: translateX(22px);
+    }
+    
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
 
     // #denied {
     //     background-color: $soft_text_white;
