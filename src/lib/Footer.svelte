@@ -12,7 +12,7 @@
         <div id="contact">
             <p><strong>Контакти</strong></p>
             <p>Телефон: {phone}</p>
-            <p>Имейл: cardiocenterbs@gmail.bg</p>
+            <p>Имейл: cardiocenterbs@gmail.com</p>
         </div>
         <div id="links">
             <p><strong>Връзки</strong></p>

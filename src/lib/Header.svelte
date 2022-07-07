@@ -15,10 +15,10 @@
 <header>
     <div class="upperHeader">
         <ul>
-            <li id="address"><i class="fa fa-map"></i> Бургас, ж.к. Перла</li>
+            <li id="address"><i class="fa fa-map"></i> Бургас, ж.к. Перла, Бл. 1, вх. 1</li>
             <li id="phone" ><i class="fa fa-phone"></i> {phone}</li>
-            <li id="email" ><i class="fa fa-envelope"></i> cardiocenterbs@gmail.bg</li>
-            <li id="workHours"><i class="fa fa-clock-o"></i> Пон-Петък 7:30 - 18:30 </li>
+            <li id="email" ><i class="fa fa-envelope"></i> cardiocenterbs@gmail.com</li>
+            <li id="workHours"><i class="fa fa-clock-o"></i> Пон-Петък 8:00 - 20:00 </li>
         </ul>
     </div>
     <div class="lowerHeader">

@@ -5,25 +5,25 @@
 </script>
 
 <div class="margined-center">
-    <PageHeading heading={"Запишете час"} underHeading={"Отговаряме бързо!"} />
+    <PageHeading heading={"Запишете час"} underHeading={" "} />
     <div class="contactInfo">
         <div class="contactInfoHeading">
             <h3>Свържете се с нас</h3>
             <div class="contactPanel">
                 <div class="par separate">
-                    <p>Молим да запишете час преди да посетите нашата клиника като използвате някои от следните методи. По този начин се избягват опашки, струпвания и губене на Ваше време. Имайте предвид, че ако се обадите извън долупосоченото работно време, има вероятност да не отговорим да повикването. В такъв случай ще се свържем с вас при първа възможност.</p>
+                    <p>Молим да запишете час преди да посетите нашата клиника като използвате някои от следните методи. По този начин се избягват опашки, струпвания и губене на Ваше време. Имайте предвид, че ако се обадите извън работното време, има вероятност да не отговорим на повикването. В такъв случай ще се свържем с Вас при първа възможност.</p>
                     <p>Имайте предвид, че когато записвате час при нас, Вие предоставяте Ваша лична информация (телефон, имена и т.н.)</p>
                 </div>
                 <div class="contacts separate">
                     <p><i class="fa fa-phone icons"></i><strong>Телефон:</strong> 0876/999-539</p>
-                    <p><i class="fa fa-envelope icons"></i><strong>Имейл:</strong> cardiocenterbs@gmail.bg</p>
-                    <p><i class="fa fa-map-marker icons"></i><strong>Адрес:</strong> Бургас, ж.к. Зорница</p>
+                    <p><i class="fa fa-envelope icons"></i><strong>Имейл:</strong> cardiocenterbs@gmail.com</p>
+                    <p><i class="fa fa-search icons"></i><strong>Google:</strong> <a href="https://g.page/CardiologicalCenter?share" target="_blank">Кардио център Бургас</a></p>
+                    <p><i class="fa fa-map-marker icons"></i><strong>Адрес:</strong> Бургас, ж.к. Зорница, Затворен комплекс "Перла", Бл. 1, вх. 1, партер</p>
                 </div>
             </div>
-            
-
         </div>
     </div>
+    <!-- <WorkTimes /> -->
 </div>
 <Map />
 
@@ -34,9 +34,17 @@
         margin: 0 15vw;
     }
 
+    .contactInfo {
+        margin-bottom: 50px;
+    }
+
     .icons {
         width: 40px;
         text-align: center;
+    }
+
+    strong, .icons {
+        color: hsl(0, 0, 20%);
     }
 
     h3 {

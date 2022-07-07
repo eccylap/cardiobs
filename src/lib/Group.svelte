@@ -12,19 +12,17 @@
         <hr>
         <span>За вашето здраве</span>
         <h1>КАРДИОЛОГИЧЕН <br> ЦЕНТЪР БУРГАС</h1>
-        <p>Вашето здраве е приоретитет за нас (мен)</p>
         <div id="phone">
             <p>0876/999-539</p>
         </div>
         <p id="smalltext">За всички мобилни оператори.</p>
-        <p id="smallertext">*отговарям до 3 седмици</p>
     </div>
     <div class="heading_alt">
         <div class="gap_up" id="hr_alt">
             <hr>
         </div>
         <h1 class="gap_up">КАРДИОЛОГИЧЕН <br> ЦЕНТЪР БУРГАС</h1>
-        <p class="gap_up">Вашето здраве е приоретитет за нас (мен)</p>
+        <p class="gap_up">За вашето здраве</p>
         <div id="phone" class="gap_up little_gap_down">
             <p>0876/999-539</p>
         </div>
@@ -40,10 +38,6 @@
 
     #smalltext {
         @include smalltext();
-    }
-
-    #smallertext {
-        @include smallertext();
     }
 
     .heading {
@@ -141,12 +135,13 @@
             }
             
             p {
-                font-size: 1.1rem;
+                font-size: 1rem;
+                font-family: "Open Sans", sans-serif;
             }
         }
         
         .gap_up {
-            margin-top: 50px;
+            margin-top: 45px;
         }
         
         .little_gap_down {

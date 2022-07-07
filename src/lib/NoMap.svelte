@@ -9,8 +9,8 @@
 
 <div id="iframe_rep" style="margin-top: {marginalTop};" title="empty" src="" frameborder="0">
     <span>Изключили сте бисквитките за карта. Може да ги включите обратно <u on:click={openModal}>тук</u></span> 
-    <p>Адрес на фирмата: Бургас иуаегфпоиаеугфил</p>
-    <p>Вместо да включвате картата може да отворите този линк тук:</p> <a target="about:blank" href="https://g.page/CardiologicalCenter?share">Към Карта</a>
+    <p>Адрес на фирмата: Бургас, ж.к. Зорница, Затворен комплекс "Перла", Бл. 1, вх. 1, партер</p>
+    <p>Вместо да включвате картата може да отворите този линк тук:</p> <a target="about:blank" href="https://g.page/CardiologicalCenter?share">Към Карта (извън страницата)</a>
 </div>
 
 
