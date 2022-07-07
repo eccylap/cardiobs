@@ -1,6 +1,7 @@
 <script>
     
     export let heading = "WARNING: NO HEADING SPECIFIED";
+    export let headingSize = '2.4rem';
     export let additionaltext1; // first text do be displayed
     export let additionaltext2; // second text to be displayed
     export let imageSource; // source for supplementary image
@@ -14,11 +15,13 @@
 <div id="containter">
     <div class="left_part">
         <hr>
-        <h2>{heading}</h2>
+        <h2 style="font-size: {headingSize};">{heading}</h2>
         <div id="idnent">
             <p><span style="display: inline-block; width: 2ch;">&#9;</span>{additionaltext1}</p>
             <p><span style="display: inline-block; width: 2ch;">&#9;</span>{additionaltext2}</p>
-            <a id="button" href={routeTo} class="gap_up little_gap_down">{infobutton} <i style="margin-left:5px;" class="fa fa-angle-right"></i></a>
+            {#if infobutton !== ''}
+                <a id="button" href={routeTo} class="gap_up little_gap_down">{infobutton} <i style="margin-left:5px;" class="fa fa-angle-right"></i></a>    
+            {/if}
         </div>
     </div>
     <div class="right_part">

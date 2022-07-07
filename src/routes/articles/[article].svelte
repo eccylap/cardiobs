@@ -24,8 +24,8 @@
                 itemsToDisplay.push({
                     type: 'photos',
                     heading: 'Снимки',
-                    paragraph: 'Ето снимки от върховния кабинет',
-                    sources: ['/clin1.png', '/clin2.png', '/clin3.png', '/clin2.png', '/clin1.png', '/clin1.png', '/clin2.png', '/clin3.png', '/clin3.png', '/clin2.png', '/clin1.png']
+                    paragraph: ' ',
+                    sources: ['/clin1.png', '/clin2.png', '/clin3.png', '/clin4.png', '/clin5.png', '/clin6.png', '/clin7.png', '/clin8.png', '/clin9.png']
                 });
                 break;
             case "forus.svelte":
@@ -33,7 +33,7 @@
                 itemsToDisplay.push({
                     type: 'text',
                     heading: 'За нас',
-                    paragraphs: ['Кардиологичен Център Бургас е оборудван с много висок клас апаратура, подбрана взискателно и безкомпромисно.  Това ни прави напълно уверени и спокойни, че сме осигурили широко поле за действие, в което да приложим нашите знания, умения и професионален опит. Наличното оборудване ни дава свободата и сигурността да реагираме неотложно и адекватно да покрием целия кардиологичен спектър в амбулаторията.'],
+                    paragraphs: ['Ние сме екип от кардиолози с дългогодишен опит в диагностицирането и лечението на сърдечно болни, придобит във водещи кардиологични и кардио-хирургично болници. Подходът ни в работата, както и цялостното ни отношение към пациентите, са формирани от съчетанието на спазването на актуалните международни препоръки за подход в конкретната проблематика, нашия професионален опит и лични ни убеждения. ', 'Кардиологичен Център Бургас е оборудван с много висок клас апаратура, подбрана взискателно и безкомпромисно.  Това ни прави напълно уверени и спокойни, че сме осигурили широко поле за действие, в което да приложим нашите знания, умения и професионален опит. Наличното оборудване ни дава свободата и сигурността да реагираме неотложно и адекватно да покрием целия кардиологичен спектър в амбулаторията.'],
                     supplementPhoto: '/logosupl.png'
                 });
                 break;
@@ -109,7 +109,8 @@
                     <p>{item.paragraph}</p>
                     <div class="photos">
                         {#each item.sources as src}
-                            <img on:click={() => alert('adw')} class="photo" src={src} alt="">
+                            <!-- on:click={() => alert('adw')}-->
+                            <img class="photo" src={src} alt="">
                         {/each}
                     </div>
                 </div>
@@ -123,10 +124,8 @@
                 <h1>{item.heading}</h1>
             {:else if item.type === "links"}
                 <div class="linkers">
-                    <div>
-                        <hr>
-                        <h2>{item.heading}</h2>
-                    </div>
+                    <hr>
+                    <h2>{item.heading}</h2>
                     <div class="linkage">
                         {#each item.links as link}
                             <a class="links" target="_blank" href={link.href}>{link.text}</a>
@@ -220,7 +219,6 @@
     .photo {
         border-radius: 15px;
         max-height: 250px;
-        cursor: pointer;
     }
 
     .err {
@@ -253,16 +251,22 @@
 
         .text {
             width: 100%;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             text-align: left;
 
             h2 {
-                font-size: 1rem;
+                font-size: 1.5rem;
+            }
+        }
+
+        .linkers {
+            h2 {
+                font-size: 1.5rem;
             }
         }
 
         h1 {
-            font-size: 1rem;
+            font-size: 1.6rem;
             margin-bottom: 20px;
         }
 
