@@ -4,9 +4,9 @@
 
 <div class="grid">
     <PageHeading heading={"Екип"} underHeading={" "} />
-    <img  id="photo1" class="photo" src="istinskidoktor.png" alt="">
-    <img  id="photo2" class="photo" src="legitdoc2.png" alt="">
-    <img  id="photo3" class="photo" src="istinskidoktor.png" alt="">
+    <img  id="photo1" class="photo" src="jivomir.png" alt="">
+    <img  id="photo2" class="photo" src="raleva.png" alt="">
+    <img  id="photo3" class="photo" src="eduard.png" alt="">
     <div class="background" id="bg1"></div>
     <div class="background" id="bg2"></div>
     <div class="background" id="bg3"></div>

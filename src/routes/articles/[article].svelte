@@ -10,15 +10,6 @@
     // links (links[ {text '', href ''}, ... ])
     afterNavigate(() => {
         switch ($page.params.article) {
-            case "covid.svelte":
-                itemsToDisplay = [];
-                itemsToDisplay.push({
-                    type: 'text',
-                    heading: 'Ковид',
-                    paragraphs: ['Прегледите в Кардиологичен Център Бургас са разпределени през голям интервал, осигуряващ възможност за проветряване и дезинфекция на помещенията и апаратурата след всеки преглед, както и избягване засичането на пациентите един с друг.', 'Прегледите в Кардиологичен Център Бургас са разпределени през голям интервал, осигуряващ възможност за проветряване и дезинфекция на помещенията и апаратурата след всеки преглед, както и избягване засичането на пациентите един с друг. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure dolorum corporis odit ea ut fuga minus non omnis amet a harum, temporibus, necessitatibus fugiat, quia aut eaque iste tempore assumenda.'],
-                    supplementPhoto: '/covid3.png'
-                });
-                break;
             case "photos.svelte":
                 itemsToDisplay = [];
                 itemsToDisplay.push({
