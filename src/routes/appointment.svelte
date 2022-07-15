@@ -44,7 +44,7 @@
     }
 
     strong, .icons {
-        color: hsl(0, 0, 20%);
+        color: hsl(0, 0%, 20%);
     }
 
     h3 {

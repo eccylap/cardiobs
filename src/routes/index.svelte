@@ -10,7 +10,7 @@
 <Group />
 <div class="centering">
     <HomeSection routeTo={`articles/photos.svelte`} heading="Кардио център Бургас" additionaltext1={additionaltexts[0]} additionaltext2={additionaltexts[1]} imageSource={"/bonusimage1.png"} infobutton={'Още снимки'}/>
-    <HomeSection routeTo={`articles/covid.svelte`} heading="Мерки против COVID-19" headingSize="2rem" additionaltext1={additionaltexts[2]} additionaltext2={'Така може да се използва Кардио Центъра дори в тези моменти'} imageSource={'/covid.png'} infobutton={''} />
+    <HomeSection routeTo={`articles/covid.svelte`} heading="Мерки против COVID-19" headingSize="2rem" additionaltext1={additionaltexts[2]} additionaltext2={'Така може да се използва Кардио Центъра дори в тези моменти на глобална пандемия.'} imageSource={''} infobutton={''} />
 </div>
 <div class="center">
     <Reviews />
