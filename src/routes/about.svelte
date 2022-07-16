@@ -97,21 +97,18 @@
 
     #photo3 {
         grid-area: 8 / 5 / span 4 / span 2;
-        height: 100%;
         width: auto;
         justify-self: center;
     }
 
     #photo2 {
         grid-area: 5 / 2 / span 4 / span 2;
-        height: 100%;
         width: auto;
         justify-self: center;
     }
 
     #photo1 {
         grid-area: 2 / 5 / span 4 / span 2;
-        height: 100%;
         width: auto;
         justify-self: center;
     }
@@ -131,21 +128,18 @@
 
         #photo1 {
             grid-area: 3 / 5 / span 3 / span 3;
-            height: 100%;
             width: auto;
             justify-self: flex-end;
         }
 
         #photo2 {
             grid-area: 6 / 1 / span 3 / span 3;
-            height: 100%;
             width: auto;
             justify-self: flex-start;
         }
 
         #photo3 {
             grid-area: 9 / 5 / span 3 / span 3;
-            height: 100%;
             width: auto;
             justify-self: flex-end;
         }
@@ -196,6 +190,11 @@
         #text3 {
             grid-area: 10 / 2 / span 1 / span 3;
         }
+
+        .photo {
+            height: 80%;
+            align-self: flex-end;
+        }
     }
 
     @media only screen and (max-width: 635px) {
@@ -206,24 +205,53 @@
         h3 {
             font-size: 1.5rem;
         }
+
+        .grid {
+            grid-template: 200px 50px 400px 50px 50px 400px 50px 50px 400px 50px 50px / 10vw 1fr 1fr 1fr 1fr 1fr 10vw ;
+        }
+
+        .photo {
+            height: auto;
+            max-width: 100%;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+        }
+
         #text1 {
-            grid-area: 3 / 2 / span 2 / span 5;
+            grid-area: 3 / 2 / span 3 / span 3;
             align-self: center;
         }
 
+        #photo1 {
+            grid-area: 3 / 5 / span 3 / span 3;
+            justify-self: flex-end;
+        }
+
         #text2 {
-            grid-area: 6 / 2 / span 2 / span 5;
+            grid-area: 6 / 2 / span 3 / span 3;
             align-self: center;
             text-align: left;
         }
 
+        #photo2 {
+            grid-area: 6 / 5 / span 3 / span 3;
+            justify-self: flex-end;
+        }
+
         #text3 {
-            grid-area: 9 / 2 / span 2 / span 5;
+            grid-area: 9 / 2 / span 3 / span 3;
             align-self: center;
         }
 
-        .photo {
-            display: none;
+        #photo3 {
+            grid-area: 9 / 5 / span 3 / span 3;
+            justify-self: flex-end;
         }
     }
 
@@ -235,30 +263,143 @@
         h3 {
             font-size: 1.4rem;
         }
+
+        .grid {
+            grid-template: 200px  50px  250px 300px 50px  50px  250px 300px 50px  50px  250px 300px 50px  50px / 5vw 1fr 1fr 1fr 1fr 1fr 5vw ;
+        }
+
+        #bg1 {
+            background-color: hsl(212, 90%, 95%);
+            grid-area: 3 / 1 / span 4 / span 7;
+        }
+
+        #bg2 {
+            background-color: hsl(212, 60%, 85%);
+            grid-area: 7 / 1 / span 4 / span 7;
+        }
+
+        #bg3 {
+            background-color: hsl(212, 90%, 95%);
+            grid-area: 10 / 1 / span 4 / span 7;
+        }
+
         #text1 {
-            grid-area: 3 / 2 / span 2 / span 5;
-            align-self: center;
+            grid-area: 4 / 2 / span 2 / span 5;
+            align-self: flex-start;
+            height: 100%;
+            background-color: hsl(212, 90%, 95%);
+            z-index: 3;
+            padding: 0px 10px;
+
+        }
+
+        #photo1 {
+            grid-area: 3 / 2 / span 3 / span 5;
+            justify-self: flex-end;
         }
 
         #text2 {
-            grid-area: 6 / 2 / span 2 / span 5;
-            align-self: center;
-            text-align: left;
+            grid-area: 8 / 2 / span 2 / span 5;
+            background-color: hsl(212, 60%, 85%);
+            align-self: flex-start;
+            height: 100%;
+            z-index: 3;
+            padding: 0px 10px;
+        }
+
+        #photo2 {
+            grid-area: 7 / 2 / span 3 / span 5;
+            justify-self: flex-end;
         }
 
         #text3 {
-            grid-area: 9 / 2 / span 2 / span 5;
-            align-self: center;
+            grid-area: 12 / 2 / span 2 / span 5;
+            background-color: hsl(212, 90%, 95%);
+            align-self: flex-start;
+            height: 100%;
+            z-index: 5;
+            padding: 0px 10px;
         }
 
-        .photo {
-            display: none;
+        #photo3 {
+            grid-area: 10 / 2 / span 3 / span 5;
+            justify-self: flex-end;
+            z-index: 4;
         }
     }
 
-    @media only screen and (max-width: 350px) {
+    @media only screen and (max-width: 400px) {
+
         .grid {
-            grid-template: 200px 50px 500px 50px 50px 500px 50px 50px 500px 50px 50px / 15vw 1fr 1fr 1fr 1fr 1fr 15vw ;
+            grid-template: 200px  50px  250px 50px 300px 50px  50px  250px 50px 300px 50px  50px  250px 300px 50px  50px / 5vw 1fr 1fr 1fr 1fr 1fr 5vw ;
+        }
+
+        .photo {
+            align-self: flex-start;
+        }
+
+        p {
+            font-size: 0.85rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        #bg1 {
+            background-color: hsl(212, 90%, 95%);
+            grid-area: 3 / 1 / span 5 / span 7;
+        }
+
+        #bg2 {
+            background-color: hsl(212, 60%, 85%);
+            grid-area: 8 / 1 / span 5 / span 7;
+        }
+
+        #bg3 {
+            background-color: hsl(212, 90%, 95%);
+            grid-area: 13 / 1 / span 5 / span 7;
+        }
+
+        #text1 {
+            grid-area: 5 / 1 / span 2 / span 7;
+            padding: 0 30px;
+        }
+
+        #photo1 {
+            grid-area: 2 / 1 / span 4 / span 7;
+        }
+
+        #text2 {
+            grid-area: 10 / 1 / span 2 / span 7;
+            padding: 0 30px;
+        }
+
+        #photo2 {
+            grid-area: 7 / 1 / span 4 / span 7;
+        }
+
+        #text3 {
+            grid-area: 14 / 1 / span 2 / span 7;
+            padding: 0 30px;
+        }
+
+        #photo3 {
+            grid-area: 12 / 1 / span 4 / span 7;
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        #text1 {
+            padding: 0 20px;
+        }
+
+        #text2 {
+            padding: 0 20px;
+        }
+
+        #text3 {
+            padding: 0 20px;
         }
     }
 </style>
