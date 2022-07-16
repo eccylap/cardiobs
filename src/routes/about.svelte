@@ -313,7 +313,7 @@
         }
 
         #text3 {
-            grid-area: 12 / 2 / span 2 / span 5;
+            grid-area: 12 / 2 / span 3 / span 5;
             background-color: hsl(212, 90%, 95%);
             align-self: flex-start;
             height: 100%;
