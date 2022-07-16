@@ -11,14 +11,14 @@
     <footer>
         <div id="contact">
             <p><strong>Контакти</strong></p>
-            <p>Телефон: {phone}</p>
-            <p>Имейл: cardiocenterbs@gmail.com</p>
+            <span>Телефон: {phone}</span> 
+            <span>Имейл: cardiocenterbs@gmail.com</span>
         </div>
         <div id="links">
             <p><strong>Връзки</strong></p>
-            <a href="/">Начало</a> <br>
+            <a href="/" style="margin-top: 0px;">Начало</a> <br>
             <a href="/offers">Дейности</a><br>
-            <a href="/about">За Нас</a><br>
+            <a href="/about">За Нас</a>
         </div>
         <div id="additional_info">
             <p><strong>Допълнителна инфромация</strong></p>
@@ -49,6 +49,7 @@
         color: $soft_text_white;
         display: inline-block;
         margin-top: 10px;
+        margin-bottom: 0px;
     }
 
     span {
@@ -78,7 +79,7 @@
         font-family: monospace;
         text-align: center;
         font-weight: bold;
-        color: $soft_text_white;
+        color: hsl(0, 0%, 40%);
     }
 
     @media only screen and (max-width: 1000px) {
