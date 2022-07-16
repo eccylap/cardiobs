@@ -265,85 +265,7 @@
         }
 
         .grid {
-            grid-template: 200px  50px  250px 300px 50px  50px  250px 300px 50px  50px  250px 300px 50px  50px / 5vw 1fr 1fr 1fr 1fr 1fr 5vw ;
-        }
-
-        #bg1 {
-            background-color: hsl(212, 90%, 95%);
-            grid-area: 3 / 1 / span 4 / span 7;
-        }
-
-        #bg2 {
-            background-color: hsl(212, 60%, 85%);
-            grid-area: 7 / 1 / span 4 / span 7;
-        }
-
-        #bg3 {
-            background-color: hsl(212, 90%, 95%);
-            grid-area: 10 / 1 / span 4 / span 7;
-        }
-
-        #text1 {
-            grid-area: 4 / 2 / span 2 / span 5;
-            align-self: flex-start;
-            height: 100%;
-            background-color: hsl(212, 90%, 95%);
-            z-index: 3;
-            padding: 0px 10px;
-
-        }
-
-        #photo1 {
-            grid-area: 3 / 2 / span 3 / span 5;
-            justify-self: flex-end;
-        }
-
-        #text2 {
-            grid-area: 8 / 2 / span 2 / span 5;
-            background-color: hsl(212, 60%, 85%);
-            align-self: flex-start;
-            height: 100%;
-            z-index: 3;
-            padding: 0px 10px;
-        }
-
-        #photo2 {
-            grid-area: 7 / 2 / span 3 / span 5;
-            justify-self: flex-end;
-        }
-
-        #text3 {
-            grid-area: 12 / 2 / span 2 / span 5;
-            background-color: hsl(212, 90%, 95%);
-            align-self: flex-start;
-            height: 100%;
-            z-index: 5;
-            padding: 0px 10px;
-        }
-
-        #photo3 {
-            grid-area: 10 / 2 / span 3 / span 5;
-            justify-self: flex-end;
-            z-index: 4;
-        }
-    }
-
-    @media only screen and (max-width: 400px) {
-
-        .grid {
-            grid-template: 200px  50px  250px 50px 300px 50px  50px  250px 50px 300px 50px  50px  250px 300px 50px  50px / 5vw 1fr 1fr 1fr 1fr 1fr 5vw ;
-        }
-
-        .photo {
-            align-self: flex-start;
-        }
-
-        p {
-            font-size: 0.85rem;
-        }
-
-        h3 {
-            font-size: 1.2rem;
+            grid-template: 200px  50px  250px 50px 300px 50px  50px  250px 50px 300px 50px  50px  250px 300px 50px  50px 50px / 5vw 1fr 1fr 1fr 1fr 1fr 5vw ;
         }
 
         #bg1 {
@@ -361,45 +283,82 @@
             grid-area: 13 / 1 / span 5 / span 7;
         }
 
+        .photo {
+            align-self: flex-start;
+        }
+
         #text1 {
-            grid-area: 5 / 1 / span 2 / span 7;
+            grid-area: 5 / 1 / span 3 / span 7;
             padding: 0 30px;
+            align-self: flex-start;
+            height: 100%;
+            background-color: hsl(212, 90%, 95%);
+            z-index: 1;
         }
 
         #photo1 {
-            grid-area: 2 / 1 / span 4 / span 7;
+            grid-area: 2 / 1 / span 4 / span 6;
+            justify-self: flex-end;
+            z-index: 0;
         }
 
         #text2 {
-            grid-area: 10 / 1 / span 2 / span 7;
+            grid-area: 10 / 1 / span 3 / span 7;
             padding: 0 30px;
+            background-color: hsl(212, 60%, 85%);
+            align-self: flex-start;
+            height: 100%;
+            z-index: 3;
         }
 
         #photo2 {
-            grid-area: 7 / 1 / span 4 / span 7;
+            grid-area: 7 / 1 / span 4 / span 6;
+            justify-self: flex-end;
+            z-index: 2;
         }
 
         #text3 {
-            grid-area: 14 / 1 / span 2 / span 7;
+            grid-area: 14 / 1 / span 4 / span 7;
             padding: 0 30px;
+            background-color: hsl(212, 90%, 95%);
+            align-self: flex-start;
+            height: 100%;
+            z-index: 5;
         }
 
         #photo3 {
-            grid-area: 12 / 1 / span 4 / span 7;
+            grid-area: 12 / 1 / span 4 / span 6;
+            justify-self: flex-end;
+            z-index: 4;
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+
+        p {
+            font-size: 0.85rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
         }
     }
 
     @media only screen and (max-width: 320px) {
+
+        .grid {
+            grid-template: 200px  50px  250px 50px 300px 100px  50px  250px 50px 300px 100px  50px  250px 300px 100px  50px / 5vw 1fr 1fr 1fr 1fr 1fr 5vw ;
+        }
         #text1 {
-            padding: 0 20px;
+            padding: 0 10px;
         }
 
         #text2 {
-            padding: 0 20px;
+            padding: 0 10px;
         }
 
         #text3 {
-            padding: 0 20px;
+            padding: 0 10px;
         }
     }
 </style>
