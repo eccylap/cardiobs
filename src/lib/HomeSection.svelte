@@ -4,7 +4,7 @@
     export let headingSize = '2.4rem';
     export let additionaltext1; // first text do be displayed
     export let additionaltext2; // second text to be displayed
-    export let imageSource; // source for supplementary image
+    export let imageSource = ' '; // source for supplementary image
     export let infobutton; // text in the pinkish red button
     export let routeTo; // href for the anchor tag which holds the pinkish red button
 
@@ -17,16 +17,18 @@
         <hr>
         <h2 style="font-size: {headingSize};">{heading}</h2>
         <div id="idnent">
-            <p><span style="display: inline-block; width: 2ch;">&#9;</span>{additionaltext1}</p>
-            <p><span style="display: inline-block; width: 2ch;">&#9;</span>{additionaltext2}</p>
+            <p>{additionaltext1}</p>
+            <p>{additionaltext2}</p>
             {#if infobutton !== ''}
                 <a id="button" href={routeTo} class="gap_up little_gap_down">{infobutton} <i style="margin-left:5px;" class="fa fa-angle-right"></i></a>    
             {/if}
         </div>
     </div>
-    <div class="right_part">
-        <img src={imageSource} alt="">
-    </div>
+    {#if imageSource !== ' '}
+        <div class="right_part">
+            <img src={imageSource} alt="">
+        </div>
+    {/if}
 </div>
 
 
@@ -50,7 +52,7 @@
         align-content: center;
         width: 100%;
         margin: 100px 0vw 50px 15vw;
-        height: 420px;
+        height: auto;
     }
 
     a {
